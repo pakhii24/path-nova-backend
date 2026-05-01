@@ -19,11 +19,12 @@ class Settings(BaseSettings):
 
     # CORS - allow Vite dev server + production domains
     CORS_ORIGINS: List[str] = [
-        "http://localhost:5173",
-        "http://localhost:3000",
-        "http://127.0.0.1:5173",
-        "https://path-nova.vercel.app",
-    ]
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:5173",
+    "https://path-nova.vercel.app",
+    "https://path-nova-frontend.vercel.app",
+]
 
     # File upload limits
     MAX_FILE_SIZE_MB: int = 10
